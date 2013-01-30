@@ -54,6 +54,14 @@
     <Compile Include="Strategy.Duck\QuackBehaviors\NoSound.cs" />
     <Compile Include="Strategy.Duck\QuackBehaviors\Quack.cs" />
     <Compile Include="Strategy.Duck\QuackBehaviors\Squeak.cs" />
+    <Compile Include="Strategy.Game\AbstractClass\Character.cs" />
+    <Compile Include="Strategy.Game\Characters\King.cs" />
+    <Compile Include="Strategy.Game\Characters\Queen.cs" />
+    <Compile Include="Strategy.Game\Interfaces\IWeaponBehavior.cs" />
+    <Compile Include="Strategy.Game\WeaponBehaviors\AxeBehavior.cs" />
+    <Compile Include="Strategy.Game\WeaponBehaviors\BowAndArrowBehavior.cs" />
+    <Compile Include="Strategy.Game\WeaponBehaviors\KnifeBehavior.cs" />
+    <Compile Include="Strategy.Game\WeaponBehaviors\SwordBehavior.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

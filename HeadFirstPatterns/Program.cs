@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using HeadFirstPatterns.Strategy.Duck;
+using HeadFirstPatterns.Strategy.Game;
 
 namespace HeadFirstPatterns
 {
@@ -28,6 +29,16 @@ namespace HeadFirstPatterns
             decoy.performFly();
             decoy.performQuack();
             decoy.display();
+
+            Console.WriteLine();
+
+            Character queen = new Queen(new KnifeBehavior());
+            queen.fight();
+
+            Console.WriteLine();
+
+            Character king = new King(new BowAndArrowBehavior());
+            king.fight();
 
             Console.WriteLine();
 
