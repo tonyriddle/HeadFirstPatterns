@@ -41,12 +41,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Observer.WeatherFromLibrary\Displays\AverageTempuratureDisplay.cs" />
-    <Compile Include="Observer.WeatherFromLibrary\Displays\CurrentConditionsDisplay.cs" />
-    <Compile Include="Observer.WeatherFromLibrary\Interfaces\IDisplayElement.cs" />
-    <Compile Include="Observer.WeatherFromLibrary\Interfaces\IWeatherObserver.cs" />
-    <Compile Include="Observer.WeatherFromLibrary\Interfaces\IWeatherProvider.cs" />
-    <Compile Include="Observer.WeatherFromLibrary\WeatherStation\WeatherData.cs" />
+    <Compile Include="Decorator.Beverage\AbstractClass\Beverage.cs" />
+    <Compile Include="Decorator.Beverage\AbstractClass\CondimentDecorator.cs" />
+    <Compile Include="Decorator.Beverage\Beverages\DarkRoast.cs" />
+    <Compile Include="Decorator.Beverage\Beverages\Decaf.cs" />
+    <Compile Include="Decorator.Beverage\Beverages\Espresso.cs" />
+    <Compile Include="Decorator.Beverage\Beverages\HouseBlend.cs" />
+    <Compile Include="Decorator.Beverage\Condiments\Mocha.cs" />
+    <Compile Include="Decorator.Beverage\Condiments\Soy.cs" />
+    <Compile Include="Decorator.Beverage\Condiments\SteamedMilk.cs" />
+    <Compile Include="Decorator.Beverage\Condiments\Sugar.cs" />
+    <Compile Include="Decorator.Beverage\Condiments\Whip.cs" />
     <Compile Include="Observer.Weather\Displays\AverageTempuratureDisplay.cs" />
     <Compile Include="Observer.Weather\Displays\CurrentConditionsDisplay.cs" />
     <Compile Include="Observer.Weather\Interfaces\IDisplayElement.cs" />

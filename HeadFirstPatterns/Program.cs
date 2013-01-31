@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using HeadFirstPatterns.Strategy.Duck;
 using HeadFirstPatterns.Strategy.Game;
 using HeadFirstPatterns.Observer.Weather;
+using HeadFirstPatterns.Decorator.Beverage;
 
 namespace HeadFirstPatterns
 {
@@ -61,6 +62,30 @@ namespace HeadFirstPatterns
             wd.setMeasurements(50, 95, 50);
             wd.setMeasurements(32, 100, 65);
             ad.removeDisplay();
+
+            Console.WriteLine();
+
+            Beverage beverage = new Espresso();
+            Console.WriteLine(beverage.getDescription() + " $" + beverage.cost());
+
+            Beverage beverage2 = new DarkRoast();
+            beverage2 = new Mocha(beverage2);
+            beverage2 = new Mocha(beverage2);
+            beverage2 = new Whip(beverage2);
+            Console.WriteLine(beverage2.getDescription() + " $" + beverage2.cost());
+
+            Beverage beverage3 = new HouseBlend();
+            beverage3 = new Soy(beverage3);
+            beverage3 = new Mocha(beverage3);
+            beverage3 = new Whip(beverage3);
+            Console.WriteLine(beverage3.getDescription() + " $" + beverage3.cost());
+
+            Beverage beverage4 = new Decaf();
+            beverage4 = new Sugar(beverage4);
+            beverage4 = new Sugar(beverage4);
+            Console.WriteLine(beverage4.getDescription() + " $" + beverage4.cost());
+
+            Console.WriteLine();
 
             Console.WriteLine("Press the 'Any' Key...");
             Console.ReadLine();
