@@ -7,6 +7,7 @@ using HeadFirstPatterns.Strategy.Duck;
 using HeadFirstPatterns.Strategy.Game;
 using HeadFirstPatterns.Observer.Weather;
 using HeadFirstPatterns.Decorator.Beverage;
+using HeadFirstPatterns.Factory.Pizza;
 
 namespace HeadFirstPatterns
 {
@@ -84,6 +85,23 @@ namespace HeadFirstPatterns
             beverage4 = new Sugar(beverage4);
             beverage4 = new Sugar(beverage4);
             Console.WriteLine(beverage4.getDescription() + " $" + beverage4.cost());
+
+            Console.WriteLine();
+
+            PizzaStore nyStore = new NYPizzaStore();
+            PizzaStore chicagoStore = new ChicagoPizzaStore();
+            Pizza pizza = nyStore.orderPizza("cheese");
+            Console.WriteLine("Customer1 ordered a " + pizza.getName());
+
+            Console.WriteLine();
+
+            pizza = chicagoStore.orderPizza("cheese");
+            Console.WriteLine("Customer2 ordered a " + pizza.getName());
+
+            Console.WriteLine();
+
+            pizza = chicagoStore.orderPizza("veggie");
+            Console.WriteLine("Customer3 ordered a " + pizza.getName());
 
             Console.WriteLine();
 

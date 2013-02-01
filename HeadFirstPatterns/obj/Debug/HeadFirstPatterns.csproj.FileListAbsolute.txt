@@ -3,3 +3,4 @@ C:\TestCode\HeadFirstPatterns\HeadFirstPatterns\bin\Debug\HeadFirstPatterns.exe
 C:\TestCode\HeadFirstPatterns\HeadFirstPatterns\bin\Debug\HeadFirstPatterns.pdb
 C:\TestCode\HeadFirstPatterns\HeadFirstPatterns\obj\Debug\HeadFirstPatterns.exe
 C:\TestCode\HeadFirstPatterns\HeadFirstPatterns\obj\Debug\HeadFirstPatterns.pdb
+C:\TestCode\HeadFirstPatterns\HeadFirstPatterns\obj\Debug\HeadFirstPatterns.csprojResolveAssemblyReference.cache
