@@ -8,6 +8,7 @@ using HeadFirstPatterns.Strategy.Game;
 using HeadFirstPatterns.Observer.Weather;
 using HeadFirstPatterns.Decorator.Beverage;
 using HeadFirstPatterns.Factory.Pizza;
+using HeadFirstPatterns.Singleton.Chocolate;
 
 namespace HeadFirstPatterns
 {
@@ -102,6 +103,18 @@ namespace HeadFirstPatterns
 
             pizza = chicagoStore.orderPizza("veggie");
             Console.WriteLine("Customer3 ordered a " + pizza.getName());
+
+            Console.WriteLine();
+
+            ChocolateBoiler b1 = ChocolateBoiler.ChocolateBoilerInstance;
+            ChocolateBoiler b2 = ChocolateBoiler.ChocolateBoilerInstance;
+
+            b1.fill();
+            b2.fill();
+            b1.boil();
+            b1.drain();
+            b2.boil();
+            b2.drain();
 
             Console.WriteLine();
 
