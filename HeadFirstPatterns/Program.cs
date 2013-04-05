@@ -9,6 +9,7 @@ using HeadFirstPatterns.Observer.Weather;
 using HeadFirstPatterns.Decorator.Beverage;
 using HeadFirstPatterns.Factory.Pizza;
 using HeadFirstPatterns.Singleton.Chocolate;
+using HeadFirstPatterns.Command.RemoteControl;
 
 namespace HeadFirstPatterns
 {
@@ -115,6 +116,56 @@ namespace HeadFirstPatterns
             b1.drain();
             b2.boil();
             b2.drain();
+
+            Console.WriteLine();
+
+            SimpleRemoteControl remote = new SimpleRemoteControl();
+            Light light = new Light("Light");
+            LightOnCommand lightOn = new LightOnCommand(light);
+            GarageDoor door = new GarageDoor("Garage Door");
+            GarageDoorOpenCommand doorOpen = new GarageDoorOpenCommand(door);
+
+            light.getStatus();
+            remote.setCommand(lightOn);
+            remote.buttonWasPressed();
+            light.getStatus();
+            door.getStatus();
+            remote.setCommand(doorOpen);
+            remote.buttonWasPressed();
+            door.getStatus();
+
+            Console.WriteLine();
+
+            RemoteControl rc = new RemoteControl();
+
+            Light livingRoomLight = new Light("Living Room Light");
+            Light kitchenLight = new Light("Kitchen Light");
+            GarageDoor garageDoor = new GarageDoor("Garage Door");
+            Stereo stereo = new Stereo("Stereo");
+
+            LightOnCommand livingRoomLightOn = new LightOnCommand(livingRoomLight);
+            LightOffCommand livingRoomLightOff = new LightOffCommand(livingRoomLight);
+            LightOnCommand kitchenLightOn = new LightOnCommand(kitchenLight);
+            LightOffCommand kitchenLightOff = new LightOffCommand(kitchenLight);
+
+            GarageDoorOpenCommand garageDoorUp = new GarageDoorOpenCommand(garageDoor);
+            GarageDoorDownCommand garageDoorDown = new GarageDoorDownCommand(garageDoor);
+
+            StereoOnWithCDCommand stereoOnWithCD = new StereoOnWithCDCommand(stereo);
+            StereoOffCommand stereoOffCommand = new StereoOffCommand(stereo);
+
+            rc.setCommand(0, livingRoomLightOn, livingRoomLightOff);
+            rc.setCommand(1, kitchenLightOn, kitchenLightOff);
+            rc.setCommand(2, stereoOnWithCD, stereoOffCommand);
+            
+            Console.WriteLine(rc.toString());
+
+            rc.onButtonWasPushed(0);
+            rc.offButtonWasPushed(0);
+            rc.onButtonWasPushed(1);
+            rc.offButtonWasPushed(1);
+            rc.onButtonWasPushed(2);
+            rc.offButtonWasPushed(2);
 
             Console.WriteLine();
 

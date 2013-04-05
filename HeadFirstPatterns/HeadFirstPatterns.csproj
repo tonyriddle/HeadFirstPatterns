@@ -41,6 +41,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Command.RemoteControl\GarageDoor.cs" />
+    <Compile Include="Command.RemoteControl\GarageDoorDownCommand.cs" />
+    <Compile Include="Command.RemoteControl\GarageDoorOpenCommand.cs" />
+    <Compile Include="Command.RemoteControl\ICommand.cs" />
+    <Compile Include="Command.RemoteControl\Light.cs" />
+    <Compile Include="Command.RemoteControl\LightOffCommand.cs" />
+    <Compile Include="Command.RemoteControl\LightOnCommand.cs" />
+    <Compile Include="Command.RemoteControl\NoCommand.cs" />
+    <Compile Include="Command.RemoteControl\RemoteControl.cs" />
+    <Compile Include="Command.RemoteControl\SimpleRemoteControl.cs" />
+    <Compile Include="Command.RemoteControl\Stereo.cs" />
+    <Compile Include="Command.RemoteControl\StereoOffCommand.cs" />
+    <Compile Include="Command.RemoteControl\StereoOnWithCDCommand.cs" />
     <Compile Include="Decorator.Beverage\AbstractClass\Beverage.cs" />
     <Compile Include="Decorator.Beverage\AbstractClass\CondimentDecorator.cs" />
     <Compile Include="Decorator.Beverage\Beverages\DarkRoast.cs" />
