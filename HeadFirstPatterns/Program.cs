@@ -169,6 +169,25 @@ namespace HeadFirstPatterns
 
             Console.WriteLine();
 
+            Adapter.Duck.MallardDuck mallardDuck = new Adapter.Duck.MallardDuck();
+            Adapter.Duck.WildTurkey wildTurkey = new Adapter.Duck.WildTurkey();
+
+            Adapter.Duck.IDuck turkeyAdapter = new Adapter.Duck.TurkeyAdapter(wildTurkey);
+
+            Console.WriteLine("The turkey says..");
+            wildTurkey.gobble();
+            wildTurkey.fly();
+
+            Console.WriteLine("The duck says..");
+            mallardDuck.quack();
+            mallardDuck.fly();
+
+            Console.WriteLine("The turkeyAdapter says..");
+            turkeyAdapter.quack();
+            turkeyAdapter.fly();
+
+            Console.WriteLine();
+
             Console.WriteLine("Press the 'Any' Key...");
             Console.ReadLine();
         }

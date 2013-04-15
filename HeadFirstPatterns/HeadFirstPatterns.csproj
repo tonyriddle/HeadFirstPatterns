@@ -41,6 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adapter.Duck\IDuck.cs" />
+    <Compile Include="Adapter.Duck\ITurkey.cs" />
+    <Compile Include="Adapter.Duck\MallardDuck.cs" />
+    <Compile Include="Adapter.Duck\TurkeyAdapter.cs" />
+    <Compile Include="Adapter.Duck\WildTurkey.cs" />
     <Compile Include="Command.RemoteControl\GarageDoor.cs" />
     <Compile Include="Command.RemoteControl\GarageDoorDownCommand.cs" />
     <Compile Include="Command.RemoteControl\GarageDoorOpenCommand.cs" />
