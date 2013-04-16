@@ -119,6 +119,9 @@
     <Compile Include="Strategy.Game\WeaponBehaviors\BowAndArrowBehavior.cs" />
     <Compile Include="Strategy.Game\WeaponBehaviors\KnifeBehavior.cs" />
     <Compile Include="Strategy.Game\WeaponBehaviors\SwordBehavior.cs" />
+    <Compile Include="Template.Beverage\CaffeineBeverage.cs" />
+    <Compile Include="Template.Beverage\Coffee.cs" />
+    <Compile Include="Template.Beverage\Tea.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

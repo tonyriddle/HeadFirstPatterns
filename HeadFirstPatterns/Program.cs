@@ -194,6 +194,15 @@ namespace HeadFirstPatterns
 
             Console.WriteLine();
 
+            Console.WriteLine("Preparing Tea...");
+            Template.Beverage.Tea tea = new Template.Beverage.Tea();
+            tea.prepareRecipe();
+            Console.WriteLine("\nPreparing Coffee...");
+            Template.Beverage.Coffee coffee = new Template.Beverage.Coffee();
+            coffee.prepareRecipe();
+
+            Console.WriteLine();
+
             Console.WriteLine("Press the 'Any' Key...");
             Console.ReadLine();
         }
