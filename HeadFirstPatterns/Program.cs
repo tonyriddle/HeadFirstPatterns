@@ -188,6 +188,12 @@ namespace HeadFirstPatterns
 
             Console.WriteLine();
 
+            Facade.HomeTheater.HomeTheaterFacade hometheater = new Facade.HomeTheater.HomeTheaterFacade();
+            hometheater.watchMovie("Stripes");
+            hometheater.endMovie();
+
+            Console.WriteLine();
+
             Console.WriteLine("Press the 'Any' Key...");
             Console.ReadLine();
         }

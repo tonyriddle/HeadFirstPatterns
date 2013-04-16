@@ -46,6 +46,8 @@
     <Compile Include="Adapter.Duck\MallardDuck.cs" />
     <Compile Include="Adapter.Duck\TurkeyAdapter.cs" />
     <Compile Include="Adapter.Duck\WildTurkey.cs" />
+    <Compile Include="Facade.HomeTheater\Amplifier.cs" />
+    <Compile Include="Facade.HomeTheater\CdPlayer.cs" />
     <Compile Include="Command.RemoteControl\GarageDoor.cs" />
     <Compile Include="Command.RemoteControl\GarageDoorDownCommand.cs" />
     <Compile Include="Command.RemoteControl\GarageDoorOpenCommand.cs" />
@@ -70,6 +72,13 @@
     <Compile Include="Decorator.Beverage\Condiments\SteamedMilk.cs" />
     <Compile Include="Decorator.Beverage\Condiments\Sugar.cs" />
     <Compile Include="Decorator.Beverage\Condiments\Whip.cs" />
+    <Compile Include="Facade.HomeTheater\DvdPlayer.cs" />
+    <Compile Include="Facade.HomeTheater\HomeTheaterFacade.cs" />
+    <Compile Include="Facade.HomeTheater\PopcornPopper.cs" />
+    <Compile Include="Facade.HomeTheater\Projector.cs" />
+    <Compile Include="Facade.HomeTheater\Screen.cs" />
+    <Compile Include="Facade.HomeTheater\TheaterLights.cs" />
+    <Compile Include="Facade.HomeTheater\Tuner.cs" />
     <Compile Include="Factory.Pizza\Pizzas\ChicagoStyleCheesePizza.cs" />
     <Compile Include="Factory.Pizza\PizzaStores\ChicagoPizzaStore.cs" />
     <Compile Include="Factory.Pizza\Pizzas\ChicagoStylePepperoniPizza.cs" />
