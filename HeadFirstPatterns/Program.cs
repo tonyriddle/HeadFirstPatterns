@@ -203,6 +203,13 @@ namespace HeadFirstPatterns
 
             Console.WriteLine();
 
+            Iterator.Menu.PancakeHouseMenu pancakeHouseMenu = new Iterator.Menu.PancakeHouseMenu();
+            Iterator.Menu.DinerMenu dinerMenu = new Iterator.Menu.DinerMenu();
+            Iterator.Menu.Waitress waitress = new Iterator.Menu.Waitress(pancakeHouseMenu, dinerMenu);
+            waitress.printMenu();
+
+            Console.WriteLine();
+
             Console.WriteLine("Press the 'Any' Key...");
             Console.ReadLine();
         }

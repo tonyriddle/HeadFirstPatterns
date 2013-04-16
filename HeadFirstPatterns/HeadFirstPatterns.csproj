@@ -91,6 +91,13 @@
     <Compile Include="Factory.Pizza\Pizzas\NYStyleCheesePizza.cs" />
     <Compile Include="Factory.Pizza\AbstractClass\Pizza.cs" />
     <Compile Include="Factory.Pizza\AbstractClass\PizzaStore.cs" />
+    <Compile Include="Iterator.Menu\DinerMenu.cs" />
+    <Compile Include="Iterator.Menu\DinerMenuIterator.cs" />
+    <Compile Include="Iterator.Menu\IIterator.cs" />
+    <Compile Include="Iterator.Menu\MenuItem.cs" />
+    <Compile Include="Iterator.Menu\PancakeHouseMenu.cs" />
+    <Compile Include="Iterator.Menu\PancakeHouseMenuIterator.cs" />
+    <Compile Include="Iterator.Menu\Waitress.cs" />
     <Compile Include="Observer.Weather\Displays\AverageTempuratureDisplay.cs" />
     <Compile Include="Observer.Weather\Displays\CurrentConditionsDisplay.cs" />
     <Compile Include="Observer.Weather\Interfaces\IDisplayElement.cs" />
