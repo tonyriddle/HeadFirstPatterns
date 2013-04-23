@@ -210,6 +210,39 @@ namespace HeadFirstPatterns
 
             Console.WriteLine();
 
+            Composite.Menu.MenuComponent compPancakeHouseMenu = new Composite.Menu.Menu("Pancake House Menu", "Breakfast");
+            Composite.Menu.MenuComponent compDinerMenu = new Composite.Menu.Menu("Diner Menu", "Lunch");
+            Composite.Menu.MenuComponent compCafeMenu = new Composite.Menu.Menu("Cafe Menu", "Dinner");
+            Composite.Menu.MenuComponent compLunchDessertMenu = new Composite.Menu.Menu("Dessert Menu", "Lunch");
+
+            Composite.Menu.MenuComponent allMenus = new Composite.Menu.Menu("All Menus", "All menus combined");
+
+            allMenus.add(compPancakeHouseMenu);
+            allMenus.add(compDinerMenu);
+            allMenus.add(compCafeMenu);
+
+            compPancakeHouseMenu.add(new Composite.Menu.MenuItem("Eggs", "Three eggs, scrambled", true, 2.89));
+            compPancakeHouseMenu.add(new Composite.Menu.MenuItem("Pancakes", "One very large stack of pancakes", true, 2.99));
+            compPancakeHouseMenu.add(new Composite.Menu.MenuItem("Bacon", "Everthing is better with bacon", false, .99));
+
+            compDinerMenu.add(new Composite.Menu.MenuItem("Pasta", "Spaghetti with Marinara Sauce, and a slice of sourdough bread", true, 3.89));
+            compDinerMenu.add(new Composite.Menu.MenuItem("Burger", @"1/2 pound Monster burger with fries", false, 8.99));
+            compDinerMenu.add(new Composite.Menu.MenuItem("Soup", "Soup of they day", true, 4.59));
+
+            compDinerMenu.add(compLunchDessertMenu);
+
+            compLunchDessertMenu.add(new Composite.Menu.MenuItem("Apple Pie", "Apple pie with flakey crust, topped with vanilla icecream", true, 1.59));
+
+            compCafeMenu.add(new Composite.Menu.MenuItem("Burger", @"1/2 pound Monster burger with fries", false, 10.99));
+            compCafeMenu.add(new Composite.Menu.MenuItem("Soup", "Soup of they day", true, 5.59));
+            compCafeMenu.add(new Composite.Menu.MenuItem("Salad", "Lettuce with bacon and dressing", true, 5.29));
+
+            Composite.Menu.Waitress compWaitress = new Composite.Menu.Waitress(allMenus);
+
+            compWaitress.printMenu();
+
+            Console.WriteLine();
+            
             Console.WriteLine("Press the 'Any' Key...");
             Console.ReadLine();
         }

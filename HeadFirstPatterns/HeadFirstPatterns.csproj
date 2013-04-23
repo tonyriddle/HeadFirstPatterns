@@ -46,6 +46,15 @@
     <Compile Include="Adapter.Duck\MallardDuck.cs" />
     <Compile Include="Adapter.Duck\TurkeyAdapter.cs" />
     <Compile Include="Adapter.Duck\WildTurkey.cs" />
+    <Compile Include="Composite.Menu\DinerMenu.cs" />
+    <Compile Include="Composite.Menu\DinerMenuIterator.cs" />
+    <Compile Include="Composite.Menu\IIterator.cs" />
+    <Compile Include="Composite.Menu\Menu.cs" />
+    <Compile Include="Composite.Menu\MenuComponent.cs" />
+    <Compile Include="Composite.Menu\MenuItem.cs" />
+    <Compile Include="Composite.Menu\PancakeHouseMenu.cs" />
+    <Compile Include="Composite.Menu\PancakeHouseMenuIterator.cs" />
+    <Compile Include="Composite.Menu\Waitress.cs" />
     <Compile Include="Facade.HomeTheater\Amplifier.cs" />
     <Compile Include="Facade.HomeTheater\CdPlayer.cs" />
     <Compile Include="Command.RemoteControl\GarageDoor.cs" />
