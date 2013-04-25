@@ -242,7 +242,34 @@ namespace HeadFirstPatterns
             compWaitress.printMenu();
 
             Console.WriteLine();
-            
+
+            Random random = new Random();
+            State.GumballMachine.GumballMachine gumballMachine = new State.GumballMachine.GumballMachine(random.Next(1, 5));
+
+            Console.WriteLine(gumballMachine.ToString());
+            gumballMachine.insertQuarter();
+            gumballMachine.turnCrank();
+            Console.WriteLine(gumballMachine.ToString());
+            gumballMachine.insertQuarter();
+            gumballMachine.ejectQuarter();
+            gumballMachine.turnCrank();
+            Console.WriteLine(gumballMachine.ToString());
+            gumballMachine.insertQuarter();
+            gumballMachine.turnCrank();
+            gumballMachine.insertQuarter();
+            gumballMachine.turnCrank();
+            Console.WriteLine(gumballMachine.ToString());
+            gumballMachine.insertQuarter();
+            gumballMachine.insertQuarter();
+            gumballMachine.turnCrank();
+            gumballMachine.insertQuarter();
+            gumballMachine.turnCrank();
+            gumballMachine.insertQuarter();
+            gumballMachine.turnCrank();
+            Console.WriteLine(gumballMachine.ToString());
+
+            Console.WriteLine();
+
             Console.WriteLine("Press the 'Any' Key...");
             Console.ReadLine();
         }
